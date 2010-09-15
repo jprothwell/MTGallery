@@ -1,0 +1,341 @@
+TMTGallery
+v7
+r0
+t305598074.920517
+cCheck dependencies
+cProcessInfoPlistFile /Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/MTGallery.app/Info.plist MTGallery-Info.plist
+cCompileXIB /Users/tron/Desktop/MTGallery/MainWindow.xib
+cCompileXIB /Users/tron/Desktop/MTGallery/WelcomeViewController.xib
+cCompileXIB /Users/tron/Desktop/MTGallery/MTGalleryViewController.xib
+cProcessPCH /var/folders/fk/fklWlCJ6HaGu5gHYvWq-BE+++TU/-Caches-/com.apple.Xcode.504/SharedPrecompiledHeaders/MTGallery_Prefix-frixdygdbvbxwdcmjpvkbqmdvncr/MTGallery_Prefix.pch.gch MTGallery_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/Objects-normal/i386/main.o /Users/tron/Desktop/MTGallery/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/Objects-normal/i386/MTGalleryAppDelegate.o /Users/tron/Desktop/MTGallery/Classes/MTGalleryAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/Objects-normal/i386/MTGalleryViewController.o /Users/tron/Desktop/MTGallery/Classes/MTGalleryViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/Objects-normal/i386/WelcomeViewController.o /Users/tron/Desktop/MTGallery/Classes/../WelcomeViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/MTGallery.app/MTGallery normal i386
+cGenerateDSYMFile /Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/MTGallery.app.dSYM /Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/MTGallery.app/MTGallery
+cTouch /Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/MTGallery.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk
+c000000004C40C83E0000000000000132
+t1279313982
+s306
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004BFDFE39000000000027C7D0
+t1274936889
+s2607056
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004BFDFE7C000000000029D5D0
+t1274936956
+s2741712
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004BFDFE6E0000000000001466
+t1274936942
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004C0470BB00000000000009CD
+t1275359419
+s2509
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004C0471620000000001D47210
+t1275359586
+s30700048
+
+N/Users/tron/Desktop/MTGallery/Classes/../WelcomeViewController.h
+c000000004C86C6B70000000000000112
+t1283901111
+s274
+i<UIKit/UIKit.h>
+
+N/Users/tron/Desktop/MTGallery/Classes/../WelcomeViewController.m
+c000000004C86CFE800000000000007D8
+t1283903464
+s2008
+i"MTGalleryAppDelegate.h"
+i"WelcomeViewController.h"
+i"MTGalleryViewController.h"
+
+N/Users/tron/Desktop/MTGallery/Classes/MTGalleryAppDelegate.h
+c000000004C86CAD300000000000001E2
+t1283902163
+s482
+i<UIKit/UIKit.h>
+i"WelcomeViewController.h"
+
+N/Users/tron/Desktop/MTGallery/Classes/MTGalleryAppDelegate.m
+c000000004C86CF320000000000000A8F
+t1283903282
+s2703
+i"MTGalleryAppDelegate.h"
+i"MTGalleryViewController.h"
+
+N/Users/tron/Desktop/MTGallery/Classes/MTGalleryViewController.h
+c000000004C86C7C0000000000000038A
+t1283901376
+s906
+i<UIKit/UIKit.h>
+
+N/Users/tron/Desktop/MTGallery/Classes/MTGalleryViewController.m
+c000000004C86D3C70000000000001B21
+t1283904455
+s6945
+i"MTGalleryViewController.h"
+
+N/Users/tron/Desktop/MTGallery/MTGalleryViewController.xib
+c000000004C86D6EF0000000000006724
+t1283905263
+s26404
+
+N/Users/tron/Desktop/MTGallery/MTGallery_Prefix.pch
+c000000004C86C75A00000000000000BB
+t1283901274
+s187
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/tron/Desktop/MTGallery/MainWindow.xib
+c000000004C86CCA00000000000004FEC
+t1283902624
+s20460
+
+N/Users/tron/Desktop/MTGallery/SimpleGalleryViewController.xib
+c000000004C8134D70000000000003985
+t1283536087
+s14725
+
+N/Users/tron/Desktop/MTGallery/WelcomeViewController.h
+c000000004C86C6B70000000000000112
+t1283901111
+s274
+i<UIKit/UIKit.h>
+
+N/Users/tron/Desktop/MTGallery/WelcomeViewController.m
+c000000004C86C6B80000000000000684
+t1283901112
+s1668
+i"MTGalleryAppDelegate.h"
+i"WelcomeViewController.h"
+i"MTGalleryViewController.h"
+
+N/Users/tron/Desktop/MTGallery/WelcomeViewController.xib
+c000000004C86CF840000000000005162
+t1283903364
+s20834
+
+N/Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/MTGallery.app
+t1283905274
+s272
+
+N/Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/MTGallery.app.dSYM
+t1283905274
+s102
+
+N/Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/MTGallery.app/Info.plist
+t1283905273
+s599
+
+N/Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/MTGallery.app/MTGallery
+t1283905274
+s31576
+
+N/Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/MTGallery.app/MTGalleryViewController.nib
+t1283905273
+s2030
+
+N/Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/MTGallery.app/MainWindow.nib
+t1283905273
+s1151
+
+N/Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/MTGallery.app/PkgInfo
+t1283905273
+s8
+
+N/Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/MTGallery.app/SimpleGalleryViewController.nib
+t1283901757
+s1661
+
+N/Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/MTGallery.app/WelcomeViewController.nib
+t1283905273
+s1901
+
+N/Users/tron/Desktop/MTGallery/build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/Objects-normal/i386/MTGallery.LinkFileList
+c000000004C86D6F90000000000000208
+t1283905273
+s520
+
+N/Users/tron/Desktop/MTGallery/build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/Objects-normal/i386/MTGalleryAppDelegate.o
+t1283905274
+s47884
+
+N/Users/tron/Desktop/MTGallery/build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/Objects-normal/i386/MTGalleryViewController.o
+t1283905274
+s61632
+
+N/Users/tron/Desktop/MTGallery/build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/Objects-normal/i386/WelcomeViewController.o
+t1283905274
+s41560
+
+N/Users/tron/Desktop/MTGallery/build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/Objects-normal/i386/main.o
+t1283905274
+s6284
+
+N/Users/tron/Desktop/MTGallery/main.m
+c000000004C86C75A0000000000000165
+t1283901274
+s357
+i<UIKit/UIKit.h>
+
+N/var/folders/fk/fklWlCJ6HaGu5gHYvWq-BE+++TU/-Caches-/com.apple.Xcode.504/SharedPrecompiledHeaders/MTGallery_Prefix-frixdygdbvbxwdcmjpvkbqmdvncr/MTGallery_Prefix.pch.gch
+t1283905274
+s15232016
+
+NMTGallery-Info.plist
+c000000004C86C75A000000000000038D
+t1283901274
+s909
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies305598073#305598073#0(0"0(0#1#0"8642950208#0"0#
+
+CCompileC build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/Objects-normal/i386/MTGalleryAppDelegate.o /Users/tron/Desktop/MTGallery/Classes/MTGalleryAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s305598074.745538
+e305598074.841016
+r1
+xCompileC
+xbuild/MTGallery.build/Debug-iphonesimulator/MTGallery.build/Objects-normal/i386/MTGalleryAppDelegate.o
+x/Users/tron/Desktop/MTGallery/Classes/MTGalleryAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@68"Compile /Users/tron/Desktop/MTGallery/Classes/MTGalleryAppDelegate.m305598074#305598074#0(0"0(0#0#60"/Users/tron/Desktop/MTGallery/Classes/MTGalleryAppDelegate.m8632716576#1882"    cd /Users/tron/Desktop/MTGallery    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/tron/Desktop/MTGallery/build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/MTGallery-generated-files.hmap -I/Users/tron/Desktop/MTGallery/build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/MTGallery-own-target-headers.hmap -I/Users/tron/Desktop/MTGallery/build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/MTGallery-all-target-headers.hmap -iquote /Users/tron/Desktop/MTGallery/build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/MTGallery-project-headers.hmap -F/Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator -I/Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/include -I/Users/tron/Desktop/MTGallery/build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/DerivedSources/i386 -I/Users/tron/Desktop/MTGallery/build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/DerivedSources -include /var/folders/fk/fklWlCJ6HaGu5gHYvWq-BE+++TU/-Caches-/com.apple.Xcode.504/SharedPrecompiledHeaders/MTGallery_Prefix-frixdygdbvbxwdcmjpvkbqmdvncr/MTGallery_Prefix.pch -c /Users/tron/Desktop/MTGallery/Classes/MTGalleryAppDelegate.m -o /Users/tron/Desktop/MTGallery/build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/Objects-normal/i386/MTGalleryAppDelegate.o0#
+
+CCompileC build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/Objects-normal/i386/MTGalleryViewController.o /Users/tron/Desktop/MTGallery/Classes/MTGalleryViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s305598074.746556
+e305598074.873758
+r1
+xCompileC
+xbuild/MTGallery.build/Debug-iphonesimulator/MTGallery.build/Objects-normal/i386/MTGalleryViewController.o
+x/Users/tron/Desktop/MTGallery/Classes/MTGalleryViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@71"Compile /Users/tron/Desktop/MTGallery/Classes/MTGalleryViewController.m305598074#305598074#0(0"0(0#0#63"/Users/tron/Desktop/MTGallery/Classes/MTGalleryViewController.m8632834944#1888"    cd /Users/tron/Desktop/MTGallery    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/tron/Desktop/MTGallery/build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/MTGallery-generated-files.hmap -I/Users/tron/Desktop/MTGallery/build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/MTGallery-own-target-headers.hmap -I/Users/tron/Desktop/MTGallery/build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/MTGallery-all-target-headers.hmap -iquote /Users/tron/Desktop/MTGallery/build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/MTGallery-project-headers.hmap -F/Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator -I/Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/include -I/Users/tron/Desktop/MTGallery/build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/DerivedSources/i386 -I/Users/tron/Desktop/MTGallery/build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/DerivedSources -include /var/folders/fk/fklWlCJ6HaGu5gHYvWq-BE+++TU/-Caches-/com.apple.Xcode.504/SharedPrecompiledHeaders/MTGallery_Prefix-frixdygdbvbxwdcmjpvkbqmdvncr/MTGallery_Prefix.pch -c /Users/tron/Desktop/MTGallery/Classes/MTGalleryViewController.m -o /Users/tron/Desktop/MTGallery/build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/Objects-normal/i386/MTGalleryViewController.o0#
+
+CCompileC build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/Objects-normal/i386/WelcomeViewController.o /Users/tron/Desktop/MTGallery/Classes/../WelcomeViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s305598074.747861
+e305598074.839027
+r1
+xCompileC
+xbuild/MTGallery.build/Debug-iphonesimulator/MTGallery.build/Objects-normal/i386/WelcomeViewController.o
+x/Users/tron/Desktop/MTGallery/Classes/../WelcomeViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@72"Compile /Users/tron/Desktop/MTGallery/Classes/../WelcomeViewController.m305598074#305598074#0(0"0(0#0#64"/Users/tron/Desktop/MTGallery/Classes/../WelcomeViewController.m8631545696#1887"    cd /Users/tron/Desktop/MTGallery    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/tron/Desktop/MTGallery/build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/MTGallery-generated-files.hmap -I/Users/tron/Desktop/MTGallery/build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/MTGallery-own-target-headers.hmap -I/Users/tron/Desktop/MTGallery/build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/MTGallery-all-target-headers.hmap -iquote /Users/tron/Desktop/MTGallery/build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/MTGallery-project-headers.hmap -F/Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator -I/Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/include -I/Users/tron/Desktop/MTGallery/build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/DerivedSources/i386 -I/Users/tron/Desktop/MTGallery/build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/DerivedSources -include /var/folders/fk/fklWlCJ6HaGu5gHYvWq-BE+++TU/-Caches-/com.apple.Xcode.504/SharedPrecompiledHeaders/MTGallery_Prefix-frixdygdbvbxwdcmjpvkbqmdvncr/MTGallery_Prefix.pch -c /Users/tron/Desktop/MTGallery/Classes/../WelcomeViewController.m -o /Users/tron/Desktop/MTGallery/build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/Objects-normal/i386/WelcomeViewController.o0#
+
+CCompileC build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/Objects-normal/i386/WelcomeViewController.o /Users/tron/Desktop/MTGallery/WelcomeViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/Objects-normal/i386/main.o /Users/tron/Desktop/MTGallery/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s305598074.744576
+e305598074.807788
+r1
+xCompileC
+xbuild/MTGallery.build/Debug-iphonesimulator/MTGallery.build/Objects-normal/i386/main.o
+x/Users/tron/Desktop/MTGallery/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@44"Compile /Users/tron/Desktop/MTGallery/main.m305598074#305598074#0(0"0(0#0#36"/Users/tron/Desktop/MTGallery/main.m8633948480#1842"    cd /Users/tron/Desktop/MTGallery    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/tron/Desktop/MTGallery/build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/MTGallery-generated-files.hmap -I/Users/tron/Desktop/MTGallery/build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/MTGallery-own-target-headers.hmap -I/Users/tron/Desktop/MTGallery/build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/MTGallery-all-target-headers.hmap -iquote /Users/tron/Desktop/MTGallery/build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/MTGallery-project-headers.hmap -F/Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator -I/Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/include -I/Users/tron/Desktop/MTGallery/build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/DerivedSources/i386 -I/Users/tron/Desktop/MTGallery/build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/DerivedSources -include /var/folders/fk/fklWlCJ6HaGu5gHYvWq-BE+++TU/-Caches-/com.apple.Xcode.504/SharedPrecompiledHeaders/MTGallery_Prefix-frixdygdbvbxwdcmjpvkbqmdvncr/MTGallery_Prefix.pch -c /Users/tron/Desktop/MTGallery/main.m -o /Users/tron/Desktop/MTGallery/build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/Objects-normal/i386/main.o0#
+
+CCompileXIB /Users/tron/Desktop/MTGallery/MTGalleryViewController.xib
+s305598073.085943
+e305598073.668576
+r1
+xCompileXIB
+x/Users/tron/Desktop/MTGallery/MTGalleryViewController.xib
+lSLF07#2@38"CompileXIB MTGalleryViewController.xib305598073#305598073#0(0"0(0#0#57"/Users/tron/Desktop/MTGallery/MTGalleryViewController.xib8634181728#571"    cd /Users/tron/Desktop/MTGallery    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/MTGallery.app/MTGalleryViewController.nib /Users/tron/Desktop/MTGallery/MTGalleryViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+
+CCompileXIB /Users/tron/Desktop/MTGallery/MainWindow.xib
+s305598073.084563
+e305598073.603823
+r1
+xCompileXIB
+x/Users/tron/Desktop/MTGallery/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib305598073#305598073#0(0"0(0#0#44"/Users/tron/Desktop/MTGallery/MainWindow.xib8634648736#545"    cd /Users/tron/Desktop/MTGallery    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/MTGallery.app/MainWindow.nib /Users/tron/Desktop/MTGallery/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+
+CCompileXIB /Users/tron/Desktop/MTGallery/SimpleGalleryViewController.xib
+s305594557.366371
+e305594558.014887
+r1
+xCompileXIB
+x/Users/tron/Desktop/MTGallery/SimpleGalleryViewController.xib
+lSLF07#2@42"CompileXIB SimpleGalleryViewController.xib305594557#305594558#0(0"0(0#0#61"/Users/tron/Desktop/MTGallery/SimpleGalleryViewController.xib8633560160#579"    cd /Users/tron/Desktop/MTGallery    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/MTGallery.app/SimpleGalleryViewController.nib /Users/tron/Desktop/MTGallery/SimpleGalleryViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+
+CCompileXIB /Users/tron/Desktop/MTGallery/WelcomeViewController.xib
+s305598073.085328
+e305598073.627697
+r1
+xCompileXIB
+x/Users/tron/Desktop/MTGallery/WelcomeViewController.xib
+lSLF07#2@36"CompileXIB WelcomeViewController.xib305598073#305598073#0(0"0(0#0#55"/Users/tron/Desktop/MTGallery/WelcomeViewController.xib8634476736#567"    cd /Users/tron/Desktop/MTGallery    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/MTGallery.app/WelcomeViewController.nib /Users/tron/Desktop/MTGallery/WelcomeViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+
+CGenerateDSYMFile /Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/MTGallery.app.dSYM /Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/MTGallery.app/MTGallery
+s305598074.901980
+e305598074.918064
+r1
+xGenerateDSYMFile
+x/Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/MTGallery.app.dSYM
+x/Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/MTGallery.app/MTGallery
+lSLF07#2@115"GenerateDSYMFile build/Debug-iphonesimulator/MTGallery.app.dSYM build/Debug-iphonesimulator/MTGallery.app/MTGallery305598074#305598074#0(0"0(0#0#81"/Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/MTGallery.app/MTGallery8642690112#362"    cd /Users/tron/Desktop/MTGallery    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/MTGallery.app/MTGallery -o /Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/MTGallery.app.dSYM0#
+
+CLd /Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/MTGallery.app/MTGallery normal i386
+s305598074.873864
+e305598074.901890
+r1
+xLd
+x/Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/MTGallery.app/MTGallery
+xnormal
+xi386
+lSLF07#2@86"Link /Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/MTGallery.app/MTGallery305598074#305598074#0(0"0(0#0#0"8630882944#865"    cd /Users/tron/Desktop/MTGallery    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -L/Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator -F/Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator -filelist /Users/tron/Desktop/MTGallery/build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/Objects-normal/i386/MTGallery.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/MTGallery.app/MTGallery0#
+
+CProcessInfoPlistFile /Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/MTGallery.app/Info.plist MTGallery-Info.plist
+s305598073.079750
+e305598073.084480
+r1
+xProcessInfoPlistFile
+x/Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/MTGallery.app/Info.plist
+xMTGallery-Info.plist
+lSLF07#2@28"Process MTGallery-Info.plist305598073#305598073#0(0"0(0#0#50"/Users/tron/Desktop/MTGallery/MTGallery-Info.plist8635523136#458"    cd /Users/tron/Desktop/MTGallery    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility MTGallery-Info.plist -genpkginfo /Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/MTGallery.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/MTGallery.app/Info.plist0#
+
+CProcessPCH /var/folders/fk/fklWlCJ6HaGu5gHYvWq-BE+++TU/-Caches-/com.apple.Xcode.504/SharedPrecompiledHeaders/MTGallery_Prefix-frixdygdbvbxwdcmjpvkbqmdvncr/MTGallery_Prefix.pch.gch MTGallery_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s305598073.668718
+e305598074.744333
+r1
+xProcessPCH
+x/var/folders/fk/fklWlCJ6HaGu5gHYvWq-BE+++TU/-Caches-/com.apple.Xcode.504/SharedPrecompiledHeaders/MTGallery_Prefix-frixdygdbvbxwdcmjpvkbqmdvncr/MTGallery_Prefix.pch.gch
+xMTGallery_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@31"Precompile MTGallery_Prefix.pch305598073#305598074#0(0"0(0#0#50"/Users/tron/Desktop/MTGallery/MTGallery_Prefix.pch8632180000#1741"    cd /Users/tron/Desktop/MTGallery    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/tron/Desktop/MTGallery/build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/MTGallery-generated-files.hmap -I/Users/tron/Desktop/MTGallery/build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/MTGallery-own-target-headers.hmap -I/Users/tron/Desktop/MTGallery/build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/MTGallery-all-target-headers.hmap -iquote /Users/tron/Desktop/MTGallery/build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/MTGallery-project-headers.hmap -F/Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator -I/Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/include -I/Users/tron/Desktop/MTGallery/build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/DerivedSources/i386 -I/Users/tron/Desktop/MTGallery/build/MTGallery.build/Debug-iphonesimulator/MTGallery.build/DerivedSources -c /Users/tron/Desktop/MTGallery/MTGallery_Prefix.pch -o /var/folders/fk/fklWlCJ6HaGu5gHYvWq-BE+++TU/-Caches-/com.apple.Xcode.504/SharedPrecompiledHeaders/MTGallery_Prefix-frixdygdbvbxwdcmjpvkbqmdvncr/MTGallery_Prefix.pch.gch0#
+
+CTouch /Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/MTGallery.app
+s305598074.918147
+e305598074.920479
+r1
+xTouch
+x/Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/MTGallery.app
+lSLF07#2@77"Touch /Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/MTGallery.app305598074#305598074#0(0"0(0#0#0"8636599808#262"    cd /Users/tron/Desktop/MTGallery    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/tron/Desktop/MTGallery/build/Debug-iphonesimulator/MTGallery.app0#
+
