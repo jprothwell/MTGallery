@@ -7,33 +7,41 @@
 //
 
 #import "MTGalleryViewController.h"
+#import "FlurryAPI.h"
 
 @implementation MTGalleryViewController
 
-@synthesize scrollView, spinner, queue, photoUrls, currentPage;
+@synthesize scrollView, spinner, queue, photoUrls, currentPage, delegate, captions, captionTextView, pageLabel;
+
+- (MTGalleryViewController *)initWithPhotos:(NSArray *)photoURLStrings andCaptions:(NSArray *)myCaptions
+{
+    self = [super init];
+
+    captions = myCaptions;
+
+    photoUrls = [[NSMutableArray alloc] init];
+    
+    for (NSString *photoURLString in photoURLStrings)
+    {
+        [photoUrls addObject:[NSURL URLWithString:photoURLString]];
+    }
+
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-        
-    self.spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+
+    [FlurryAPI startSession:@"KH5S9MJW6HY9GXA6RP3D"];
+         
+    self.delegate = self;
     
     /* Operation Queue init (autorelease) */
     self.queue = [NSOperationQueue new];
-    [self.queue setMaxConcurrentOperationCount:2];
-    
-    self.photoUrls = [[[NSMutableArray alloc] init] autorelease];
-    
-    [photoUrls addObject:[NSURL URLWithString:@"http://www.luminous-landscape.com/images64/gallery4741-thumb.jpg"]];
-    [photoUrls addObject:[NSURL URLWithString:@"http://www.secondspacegallery.com/images/Second-Space-Gallery_for-we.jpg"]];
-    [photoUrls addObject:[NSURL URLWithString:@"http://images.politico.com/global/portland.jpg"]];
-    [photoUrls addObject:[NSURL URLWithString:@"http://www.cape-verde-holiday.com/kitesurf.jpg"]];
-    [photoUrls addObject:[NSURL URLWithString:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"]];
-    [photoUrls addObject:[NSURL URLWithString:@"http://blog.lib.umn.edu/gratt014/architecture/SolarTowerMojaveDesert.jpg"]];
-    [photoUrls addObject:[NSURL URLWithString:@"http://www.treehugger.com/daylesford-organic-garden-chelsea-.jpg"]];
+    [self.queue setMaxConcurrentOperationCount:1];
     
     [self resizeScrollView];
 }
-
 
 - (void) loadImageViewWithUrl:(NSArray *)args 
 {
@@ -54,11 +62,6 @@
     NSData *data = [[NSData alloc] initWithContentsOfURL:imageURL];
 
     // Stop spinner
-    if (imageView.tag == currentPage)
-    {
-        [self.spinner performSelectorOnMainThread:@selector(stopAnimating) withObject:nil waitUntilDone:NO];
-    }
-    
     if (data != nil)
     {
         NSLog(@"Download complete for %@", [imageURL absoluteString]);
@@ -74,17 +77,17 @@
     else
     {
         NSLog(@"Download failed for %@", [imageURL absoluteString]);
-        //                NSString *imagePath = [[NSBundle mainBundle] pathForResource:@"error" ofType:@"png"];
-        //                data = [[NSData alloc] initWithContentsOfFile:imagePath];
-        //                [self.imageCache setObject:data forKey:[imageURL absoluteString]];
-        //                [imageView setImage:[UIImage imageWithData:data]];
+        [imageView performSelectorOnMainThread:@selector(setImage:) withObject:[UIImage imageNamed:@"MTGallery_image_not_found"] waitUntilDone:NO];
     }
     
-    //                [imageView setImage:[UIImage imageWithData:data]];
+    if (imageView.tag == currentPage)
+    {
+        [self.spinner performSelectorOnMainThread:@selector(stopAnimating) withObject:nil waitUntilDone:NO];
+    }
 }
 
 - (void) resizeScrollView
-{
+{    
     [self.scrollView setContentSize:CGSizeMake(self.scrollView.frame.size.width * [photoUrls count], self.scrollView.frame.size.height)];
 }
 
@@ -102,6 +105,11 @@
     BOOL foundCurrent = NO;
     BOOL foundPrevious = NO;
     BOOL foundNext = NO;
+    
+    // Send these to the back
+    [self.scrollView sendSubviewToBack:self.captionTextView];
+    [self.scrollView sendSubviewToBack:self.spinner];
+    [self.scrollView sendSubviewToBack:self.pageLabel];
     
     // Unload views too far away
     for (UIView *v in [self.scrollView subviews])
@@ -124,19 +132,49 @@
             continue;
         }
 
-        // Should remove the spinner too
-        [v removeFromSuperview];
+        // Remove images
+        if (v.tag != 0)
+        {
+            [v removeFromSuperview];
+        }
     }
+    
+    // Bring back
+    [self.scrollView bringSubviewToFront:self.captionTextView];
+    [self.scrollView bringSubviewToFront:self.spinner];
+    [self.scrollView bringSubviewToFront:self.pageLabel];
+    
+    
+    // Reposition pageLabel
+    self.pageLabel.center = CGPointMake(self.scrollView.contentOffset.x + (self.scrollView.frame.size.width / 2), self.pageLabel.center.y);
+    self.pageLabel.text = [NSString stringWithFormat:@"%d/%d", self.currentPage, [self.photoUrls count]];
+    
+    // Reposition caption
+    self.captionTextView.center = CGPointMake(self.scrollView.contentOffset.x + (self.scrollView.frame.size.width / 2), self.captionTextView.center.y);
 
+    // Reposition spinner
+    self.spinner.center = CGPointMake(self.scrollView.contentOffset.x + (self.scrollView.frame.size.width / 2), self.scrollView.frame.size.height / 2);
+    
+    
+    // Protect again out of bounds.
+    if (self.currentPage <= [self.captions count])
+    {
+        self.captionTextView.hidden = NO;
+        self.captionTextView.text = [self.captions objectAtIndex:self.currentPage - 1];
+    }
+    else
+    {
+        self.captionTextView.hidden = YES;
+    }
+    
+    
+
+    // Load Images    
     if (foundCurrent == NO)
     {
-        // Place spinner..
-        self.spinner.frame = CGRectMake(0,0,40,40);
-        self.spinner.center = CGPointMake(self.scrollView.contentOffset.x + (self.scrollView.frame.size.width / 2), self.scrollView.frame.size.height / 2);
+        // Start animating
         [self.spinner performSelectorOnMainThread:@selector(startAnimating) withObject:nil waitUntilDone:NO];
-        [self.scrollView performSelectorOnMainThread:@selector(addSubview:) withObject:self.spinner waitUntilDone:NO];
-        
-        
+
         [self queueImageRetrievalForPage:(currentPage)];
     }
     
@@ -164,19 +202,23 @@
     UIImageView *imageView = [[[UIImageView alloc] initWithFrame:CGRectMake(self.scrollView.frame.size.width * (page - 1), 0, self.scrollView.frame.size.width, self.scrollView.frame.size.height)] autorelease];
     imageView.contentMode = UIViewContentModeScaleAspectFit;
     imageView.tag = page;
+    imageView.userInteractionEnabled = YES;
+    imageView.backgroundColor = [UIColor clearColor];
+    
+    [self.scrollView bringSubviewToFront:self.captionTextView];
+    [self.scrollView bringSubviewToFront:self.spinner];
+    [self.scrollView bringSubviewToFront:self.pageLabel];
     
     // Create our NSInvocationOperation to call loadDataWithOperation, passing in nil
     NSInvocationOperation *operation = [[NSInvocationOperation alloc] initWithTarget:self
                                                                             selector:@selector(loadImageViewWithUrl:)
-                                                                              object:[[NSArray alloc] initWithObjects:imageView,photoURL,nil]];
+                                                                              object:[NSArray arrayWithObjects:imageView,photoURL,nil]];
     // Add the operation to the queue
     [self.queue addOperation:operation];
     [operation release];
     
     [self.scrollView addSubview:imageView];    
 }
-
-
 
 - (IBAction) closePhotos{
     [self dismissModalViewControllerAnimated:YES];
@@ -187,7 +229,11 @@
     // Clear out scrollview
     for (UIView *v in [self.scrollView subviews])
     {
-        [v removeFromSuperview];
+        if (v.tag != 0)
+        {
+            [v removeFromSuperview];
+            v = nil;
+        }
     }    
 }
 
@@ -197,12 +243,47 @@
     
     // Scroll Back to beginning so we're not stuck between pages
     // origin of x and y...then size...
-    CGRect r = CGRectMake(self.scrollView.frame.size.width * self.currentPage,0,self.scrollView.frame.size.width,self.scrollView.frame.size.height);
-    
+    CGRect r = CGRectMake(0,0,self.scrollView.frame.size.width,self.scrollView.frame.size.height);    
+    [self.scrollView scrollRectToVisible:r animated:NO];     
+
+    r = CGRectMake(self.scrollView.frame.size.width * (self.currentPage - 1),0,self.scrollView.frame.size.width,self.scrollView.frame.size.height);        
     [self.scrollView scrollRectToVisible:r animated:NO];     
     
     // rebuild contents of scrollview
     [self loadImagesForCurrentPosition];
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event 
+{
+    // Ignore touches while scrollview is moving
+    if (self.scrollView.decelerating)
+    {
+        return;
+    }
+    
+    UITouch *touch = [[event allTouches] anyObject];
+    
+    NSInteger itemIndex = [touch view].tag - 1;
+    
+    // Must be a better way to do this
+    if ([[touch view] isKindOfClass:[UIImageView class]] && [touch view].tag > 0)
+    {
+        if (itemIndex < 0 || itemIndex >= [self.photoUrls count])
+        {
+            NSLog(@"Out of bounds");
+            return;
+        }    
+        
+        [self.delegate touchOnItemWithIndex:itemIndex];
+    }
+}
+
+# pragma mark -
+# pragma mark MTGalleryDelegate Methods
+
+- (void) touchOnItemWithIndex:(NSInteger)index
+{
+    NSLog(@"touch on item with index: %d", index);
 }
 
 
@@ -226,6 +307,8 @@
 
 - (void)dealloc {
     
+    [captionTextView release];
+    [photoUrls release];
     [spinner release];
     [super dealloc];
 }

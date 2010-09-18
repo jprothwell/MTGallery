@@ -14,6 +14,9 @@
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* MTGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* MTGalleryViewController.m */; };
+		8F0D5ECF1244302E0098D979 /* MTGallery_image_not_found.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F0D5ECE1244302E0098D979 /* MTGallery_image_not_found.png */; };
+		8FDD75EE12419A2A00D59618 /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FDD75ED12419A2A00D59618 /* libFlurry.a */; };
+		8FDD761512419DB800D59618 /* MTScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDD761412419DB800D59618 /* MTScrollView.m */; };
 		8FF138A81236FFB300BC683B /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF138A61236FFB300BC683B /* WelcomeViewController.m */; };
 		8FF138A91236FFB300BC683B /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FF138A71236FFB300BC683B /* WelcomeViewController.xib */; };
 		8FF138B31236FFF400BC683B /* MTGalleryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FF138B21236FFF400BC683B /* MTGalleryViewController.xib */; };
@@ -32,6 +35,11 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* MTGallery_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTGallery_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* MTGallery-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MTGallery-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		8F0D5ECE1244302E0098D979 /* MTGallery_image_not_found.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MTGallery_image_not_found.png; sourceTree = "<group>"; };
+		8FDD75EC12419A2A00D59618 /* FlurryAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAPI.h; sourceTree = "<group>"; };
+		8FDD75ED12419A2A00D59618 /* libFlurry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry.a; sourceTree = "<group>"; };
+		8FDD761312419DB800D59618 /* MTScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTScrollView.h; sourceTree = "<group>"; };
+		8FDD761412419DB800D59618 /* MTScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTScrollView.m; sourceTree = "<group>"; };
 		8FF138A51236FFB300BC683B /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WelcomeViewController.h; path = ../WelcomeViewController.h; sourceTree = "<group>"; };
 		8FF138A61236FFB300BC683B /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WelcomeViewController.m; path = ../WelcomeViewController.m; sourceTree = "<group>"; };
 		8FF138A71236FFB300BC683B /* WelcomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
@@ -46,6 +54,7 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				8FDD75EE12419A2A00D59618 /* libFlurry.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +70,8 @@
 				28D7ACF70DDB3853001CB0EB /* MTGalleryViewController.m */,
 				8FF138A51236FFB300BC683B /* WelcomeViewController.h */,
 				8FF138A61236FFB300BC683B /* WelcomeViewController.m */,
+				8FDD761312419DB800D59618 /* MTScrollView.h */,
+				8FDD761412419DB800D59618 /* MTScrollView.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -79,6 +90,7 @@
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
+				8FDD75E812419A2100D59618 /* Support */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -97,6 +109,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8F0D5ECE1244302E0098D979 /* MTGallery_image_not_found.png */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* MTGallery-Info.plist */,
 				8FF138B21236FFF400BC683B /* MTGalleryViewController.xib */,
@@ -113,6 +126,23 @@
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8FDD75E812419A2100D59618 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				8FDD75EB12419A2A00D59618 /* FlurryLib */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		8FDD75EB12419A2A00D59618 /* FlurryLib */ = {
+			isa = PBXGroup;
+			children = (
+				8FDD75EC12419A2A00D59618 /* FlurryAPI.h */,
+				8FDD75ED12419A2A00D59618 /* libFlurry.a */,
+			);
+			path = FlurryLib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +172,14 @@
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MTGallery" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -160,6 +197,7 @@
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				8FF138A91236FFB300BC683B /* WelcomeViewController.xib in Resources */,
 				8FF138B31236FFF400BC683B /* MTGalleryViewController.xib in Resources */,
+				8F0D5ECF1244302E0098D979 /* MTGallery_image_not_found.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +212,7 @@
 				1D3623260D0F684500981E51 /* MTGalleryAppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* MTGalleryViewController.m in Sources */,
 				8FF138A81236FFB300BC683B /* WelcomeViewController.m in Sources */,
+				8FDD761512419DB800D59618 /* MTScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,7 +229,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MTGallery_Prefix.pch;
 				INFOPLIST_FILE = "MTGallery-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/FlurryLib\"",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = MTGallery;
+				SDKROOT = iphoneos4.1;
 			};
 			name = Debug;
 		};
@@ -202,6 +247,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MTGallery_Prefix.pch;
 				INFOPLIST_FILE = "MTGallery-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/FlurryLib\"",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = MTGallery;
 				VALIDATE_PRODUCT = YES;
 			};
