@@ -173,7 +173,7 @@
     if (foundCurrent == NO)
     {
         // Start animating
-        [self.spinner performSelectorOnMainThread:@selector(startAnimating) withObject:nil waitUntilDone:NO];
+        [self.spinner performSelectorOnMainThread:@selector(startAnimating) withObject:nil waitUntilDone:YES];
 
         [self queueImageRetrievalForPage:(currentPage)];
     }
