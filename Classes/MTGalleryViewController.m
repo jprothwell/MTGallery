@@ -7,7 +7,6 @@
 //
 
 #import "MTGalleryViewController.h"
-#import "FlurryAPI.h"
 
 @implementation MTGalleryViewController
 
@@ -32,8 +31,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [FlurryAPI startSession:@"KH5S9MJW6HY9GXA6RP3D"];
-         
     self.delegate = self;
     
     /* Operation Queue init (autorelease) */

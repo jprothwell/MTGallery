@@ -15,7 +15,6 @@
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* MTGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* MTGalleryViewController.m */; };
 		8F0D5ECF1244302E0098D979 /* MTGallery_image_not_found.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F0D5ECE1244302E0098D979 /* MTGallery_image_not_found.png */; };
-		8FDD75EE12419A2A00D59618 /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FDD75ED12419A2A00D59618 /* libFlurry.a */; };
 		8FDD761512419DB800D59618 /* MTScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDD761412419DB800D59618 /* MTScrollView.m */; };
 		8FF138A81236FFB300BC683B /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF138A61236FFB300BC683B /* WelcomeViewController.m */; };
 		8FF138A91236FFB300BC683B /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FF138A71236FFB300BC683B /* WelcomeViewController.xib */; };
@@ -36,8 +35,6 @@
 		32CA4F630368D1EE00C91783 /* MTGallery_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTGallery_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* MTGallery-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MTGallery-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		8F0D5ECE1244302E0098D979 /* MTGallery_image_not_found.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MTGallery_image_not_found.png; sourceTree = "<group>"; };
-		8FDD75EC12419A2A00D59618 /* FlurryAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAPI.h; sourceTree = "<group>"; };
-		8FDD75ED12419A2A00D59618 /* libFlurry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry.a; sourceTree = "<group>"; };
 		8FDD761312419DB800D59618 /* MTScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTScrollView.h; sourceTree = "<group>"; };
 		8FDD761412419DB800D59618 /* MTScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTScrollView.m; sourceTree = "<group>"; };
 		8FF138A51236FFB300BC683B /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WelcomeViewController.h; path = ../WelcomeViewController.h; sourceTree = "<group>"; };
@@ -54,7 +51,6 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
-				8FDD75EE12419A2A00D59618 /* libFlurry.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,18 +127,8 @@
 		8FDD75E812419A2100D59618 /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				8FDD75EB12419A2A00D59618 /* FlurryLib */,
 			);
 			name = Support;
-			sourceTree = "<group>";
-		};
-		8FDD75EB12419A2A00D59618 /* FlurryLib */ = {
-			isa = PBXGroup;
-			children = (
-				8FDD75EC12419A2A00D59618 /* FlurryAPI.h */,
-				8FDD75ED12419A2A00D59618 /* libFlurry.a */,
-			);
-			path = FlurryLib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
