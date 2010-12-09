@@ -10,7 +10,6 @@
 #import "WelcomeViewController.h"
 #import "MTGalleryViewController.h"
 
-
 @implementation WelcomeViewController
 
 - (IBAction) launchGallery:(id)sender
@@ -26,199 +25,6 @@
     [myPhotos addObject:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"];
     [myPhotos addObject:@"http://www.luminous-landscape.com/images64/gallery4741-thumb.jpg"];    
     [myPhotos addObject:@"http://www.secondspacegallery.com/images/Second-Space-Gallery_for-we.jpg"];
-    [myPhotos addObject:@"http://images.politico.com/global/portland.jpg"];
-    [myPhotos addObject:@"http://www.cape-verde-holiday.com/kitesurf.jpg"];
-    [myPhotos addObject:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"];
-    [myPhotos addObject:@"http://www.luminous-landscape.com/images64/gallery4741-thumb.jpg"];    
-    [myPhotos addObject:@"http://www.secondspacegallery.com/images/Second-Space-Gallery_for-we.jpg"];
-    [myPhotos addObject:@"http://images.politico.com/global/portland.jpg"];
-    [myPhotos addObject:@"http://www.cape-verde-holiday.com/kitesurf.jpg"];
-    [myPhotos addObject:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"];
-    [myPhotos addObject:@"http://www.luminous-landscape.com/images64/gallery4741-thumb.jpg"];    
-    [myPhotos addObject:@"http://www.secondspacegallery.com/images/Second-Space-Gallery_for-we.jpg"];
-    [myPhotos addObject:@"http://images.politico.com/global/portland.jpg"];
-    [myPhotos addObject:@"http://www.cape-verde-holiday.com/kitesurf.jpg"];
-    [myPhotos addObject:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"];
-    [myPhotos addObject:@"http://www.luminous-landscape.com/images64/gallery4741-thumb.jpg"];    
-    [myPhotos addObject:@"http://www.secondspacegallery.com/images/Second-Space-Gallery_for-we.jpg"];
-    [myPhotos addObject:@"http://images.politico.com/global/portland.jpg"];
-    [myPhotos addObject:@"http://www.cape-verde-holiday.com/kitesurf.jpg"];
-    [myPhotos addObject:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"];
-    [myPhotos addObject:@"http://www.luminous-landscape.com/images64/gallery4741-thumb.jpg"];    
-    [myPhotos addObject:@"http://www.secondspacegallery.com/images/Second-Space-Gallery_for-we.jpg"];
-    [myPhotos addObject:@"http://images.politico.com/global/portland.jpg"];
-    [myPhotos addObject:@"http://www.cape-verde-holiday.com/kitesurf.jpg"];
-    [myPhotos addObject:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"];
-    [myPhotos addObject:@"http://www.luminous-landscape.com/images64/gallery4741-thumb.jpg"];    
-    [myPhotos addObject:@"http://www.secondspacegallery.com/images/Second-Space-Gallery_for-we.jpg"];
-    [myPhotos addObject:@"http://images.politico.com/global/portland.jpg"];
-    [myPhotos addObject:@"http://www.cape-verde-holiday.com/kitesurf.jpg"];
-    [myPhotos addObject:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"];
-    [myPhotos addObject:@"http://www.luminous-landscape.com/images64/gallery4741-thumb.jpg"];    
-    [myPhotos addObject:@"http://www.secondspacegallery.com/images/Second-Space-Gallery_for-we.jpg"];
-    [myPhotos addObject:@"http://images.politico.com/global/portland.jpg"];
-    [myPhotos addObject:@"http://www.cape-verde-holiday.com/kitesurf.jpg"];
-    [myPhotos addObject:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"];
-    [myPhotos addObject:@"http://www.luminous-landscape.com/images64/gallery4741-thumb.jpg"];    
-    [myPhotos addObject:@"http://www.secondspacegallery.com/images/Second-Space-Gallery_for-we.jpg"];
-    [myPhotos addObject:@"http://images.politico.com/global/portland.jpg"];
-    [myPhotos addObject:@"http://www.cape-verde-holiday.com/kitesurf.jpg"];
-    [myPhotos addObject:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"];
-    [myPhotos addObject:@"http://www.luminous-landscape.com/images64/gallery4741-thumb.jpg"];    
-    [myPhotos addObject:@"http://www.secondspacegallery.com/images/Second-Space-Gallery_for-we.jpg"];
-    [myPhotos addObject:@"http://images.politico.com/global/portland.jpg"];
-    [myPhotos addObject:@"http://www.cape-verde-holiday.com/kitesurf.jpg"];
-    [myPhotos addObject:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"];
-    [myPhotos addObject:@"http://www.luminous-landscape.com/images64/gallery4741-thumb.jpg"];    
-    [myPhotos addObject:@"http://www.secondspacegallery.com/images/Second-Space-Gallery_for-we.jpg"];
-    [myPhotos addObject:@"http://images.politico.com/global/portland.jpg"];
-    [myPhotos addObject:@"http://www.cape-verde-holiday.com/kitesurf.jpg"];
-    [myPhotos addObject:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"];
-    [myPhotos addObject:@"http://www.luminous-landscape.com/images64/gallery4741-thumb.jpg"];    
-    [myPhotos addObject:@"http://www.secondspacegallery.com/images/Second-Space-Gallery_for-we.jpg"];
-    [myPhotos addObject:@"http://images.politico.com/global/portland.jpg"];
-    [myPhotos addObject:@"http://www.cape-verde-holiday.com/kitesurf.jpg"];
-    [myPhotos addObject:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"];
-    [myPhotos addObject:@"http://www.luminous-landscape.com/images64/gallery4741-thumb.jpg"];    
-    [myPhotos addObject:@"http://www.secondspacegallery.com/images/Second-Space-Gallery_for-we.jpg"];
-    [myPhotos addObject:@"http://images.politico.com/global/portland.jpg"];
-    [myPhotos addObject:@"http://www.cape-verde-holiday.com/kitesurf.jpg"];
-    [myPhotos addObject:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"];
-    [myPhotos addObject:@"http://www.luminous-landscape.com/images64/gallery4741-thumb.jpg"];    
-    [myPhotos addObject:@"http://www.secondspacegallery.com/images/Second-Space-Gallery_for-we.jpg"];
-    [myPhotos addObject:@"http://images.politico.com/global/portland.jpg"];
-    [myPhotos addObject:@"http://www.cape-verde-holiday.com/kitesurf.jpg"];
-    [myPhotos addObject:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"];
-    [myPhotos addObject:@"http://www.luminous-landscape.com/images64/gallery4741-thumb.jpg"];    
-    [myPhotos addObject:@"http://www.secondspacegallery.com/images/Second-Space-Gallery_for-we.jpg"];
-    [myPhotos addObject:@"http://images.politico.com/global/portland.jpg"];
-    [myPhotos addObject:@"http://www.cape-verde-holiday.com/kitesurf.jpg"];
-    [myPhotos addObject:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"];
-    [myPhotos addObject:@"http://www.luminous-landscape.com/images64/gallery4741-thumb.jpg"];    
-    [myPhotos addObject:@"http://www.secondspacegallery.com/images/Second-Space-Gallery_for-we.jpg"];
-    [myPhotos addObject:@"http://images.politico.com/global/portland.jpg"];
-    [myPhotos addObject:@"http://www.cape-verde-holiday.com/kitesurf.jpg"];
-    [myPhotos addObject:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"];
-    [myPhotos addObject:@"http://www.luminous-landscape.com/images64/gallery4741-thumb.jpg"];    
-    [myPhotos addObject:@"http://www.secondspacegallery.com/images/Second-Space-Gallery_for-we.jpg"];
-    [myPhotos addObject:@"http://images.politico.com/global/portland.jpg"];
-    [myPhotos addObject:@"http://www.cape-verde-holiday.com/kitesurf.jpg"];
-    [myPhotos addObject:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"];
-    [myPhotos addObject:@"http://www.luminous-landscape.com/images64/gallery4741-thumb.jpg"];    
-    [myPhotos addObject:@"http://www.secondspacegallery.com/images/Second-Space-Gallery_for-we.jpg"];
-    [myPhotos addObject:@"http://images.politico.com/global/portland.jpg"];
-    [myPhotos addObject:@"http://www.cape-verde-holiday.com/kitesurf.jpg"];
-    [myPhotos addObject:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"];
-    [myPhotos addObject:@"http://www.luminous-landscape.com/images64/gallery4741-thumb.jpg"];    
-    [myPhotos addObject:@"http://www.secondspacegallery.com/images/Second-Space-Gallery_for-we.jpg"];
-    [myPhotos addObject:@"http://images.politico.com/global/portland.jpg"];
-    [myPhotos addObject:@"http://www.cape-verde-holiday.com/kitesurf.jpg"];
-    [myPhotos addObject:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"];
-    [myPhotos addObject:@"http://www.luminous-landscape.com/images64/gallery4741-thumb.jpg"];    
-    [myPhotos addObject:@"http://www.secondspacegallery.com/images/Second-Space-Gallery_for-we.jpg"];
-    [myPhotos addObject:@"http://images.politico.com/global/portland.jpg"];
-    [myPhotos addObject:@"http://www.cape-verde-holiday.com/kitesurf.jpg"];
-    [myPhotos addObject:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"];
-    [myPhotos addObject:@"http://www.luminous-landscape.com/images64/gallery4741-thumb.jpg"];    
-    [myPhotos addObject:@"http://www.secondspacegallery.com/images/Second-Space-Gallery_for-we.jpg"];
-    [myPhotos addObject:@"http://images.politico.com/global/portland.jpg"];
-    [myPhotos addObject:@"http://www.cape-verde-holiday.com/kitesurf.jpg"];
-    [myPhotos addObject:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"];
-    [myPhotos addObject:@"http://www.luminous-landscape.com/images64/gallery4741-thumb.jpg"];    
-    [myPhotos addObject:@"http://www.secondspacegallery.com/images/Second-Space-Gallery_for-we.jpg"];
-    [myPhotos addObject:@"http://images.politico.com/global/portland.jpg"];
-    [myPhotos addObject:@"http://www.cape-verde-holiday.com/kitesurf.jpg"];
-    [myPhotos addObject:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"];
-    [myPhotos addObject:@"http://www.luminous-landscape.com/images64/gallery4741-thumb.jpg"];    
-    [myPhotos addObject:@"http://www.secondspacegallery.com/images/Second-Space-Gallery_for-we.jpg"];
-    [myPhotos addObject:@"http://images.politico.com/global/portland.jpg"];
-    [myPhotos addObject:@"http://www.cape-verde-holiday.com/kitesurf.jpg"];
-    [myPhotos addObject:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"];
-    [myPhotos addObject:@"http://www.luminous-landscape.com/images64/gallery4741-thumb.jpg"];    
-    [myPhotos addObject:@"http://www.secondspacegallery.com/images/Second-Space-Gallery_for-we.jpg"];
-    [myPhotos addObject:@"http://images.politico.com/global/portland.jpg"];
-    [myPhotos addObject:@"http://www.cape-verde-holiday.com/kitesurf.jpg"];
-    [myPhotos addObject:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"];
-    [myPhotos addObject:@"http://www.luminous-landscape.com/images64/gallery4741-thumb.jpg"];    
-    [myPhotos addObject:@"http://www.secondspacegallery.com/images/Second-Space-Gallery_for-we.jpg"];
-    [myPhotos addObject:@"http://images.politico.com/global/portland.jpg"];
-    [myPhotos addObject:@"http://www.cape-verde-holiday.com/kitesurf.jpg"];
-    [myPhotos addObject:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"];
-    [myPhotos addObject:@"http://www.luminous-landscape.com/images64/gallery4741-thumb.jpg"];    
-    [myPhotos addObject:@"http://www.secondspacegallery.com/images/Second-Space-Gallery_for-we.jpg"];
-    [myPhotos addObject:@"http://images.politico.com/global/portland.jpg"];
-    [myPhotos addObject:@"http://www.cape-verde-holiday.com/kitesurf.jpg"];
-    [myPhotos addObject:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"];
-    [myPhotos addObject:@"http://www.luminous-landscape.com/images64/gallery4741-thumb.jpg"];    
-    [myPhotos addObject:@"http://www.secondspacegallery.com/images/Second-Space-Gallery_for-we.jpg"];
-    [myPhotos addObject:@"http://images.politico.com/global/portland.jpg"];
-    [myPhotos addObject:@"http://www.cape-verde-holiday.com/kitesurf.jpg"];
-    [myPhotos addObject:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"];
-    [myPhotos addObject:@"http://www.luminous-landscape.com/images64/gallery4741-thumb.jpg"];    
-    [myPhotos addObject:@"http://www.secondspacegallery.com/images/Second-Space-Gallery_for-we.jpg"];
-    [myPhotos addObject:@"http://images.politico.com/global/portland.jpg"];
-    [myPhotos addObject:@"http://www.cape-verde-holiday.com/kitesurf.jpg"];
-    [myPhotos addObject:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"];
-    [myPhotos addObject:@"http://www.luminous-landscape.com/images64/gallery4741-thumb.jpg"];    
-    [myPhotos addObject:@"http://www.secondspacegallery.com/images/Second-Space-Gallery_for-we.jpg"];
-    [myPhotos addObject:@"http://images.politico.com/global/portland.jpg"];
-    [myPhotos addObject:@"http://www.cape-verde-holiday.com/kitesurf.jpg"];
-    [myPhotos addObject:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"];
-    [myPhotos addObject:@"http://www.luminous-landscape.com/images64/gallery4741-thumb.jpg"];    
-    [myPhotos addObject:@"http://www.secondspacegallery.com/images/Second-Space-Gallery_for-we.jpg"];
-    [myPhotos addObject:@"http://images.politico.com/global/portland.jpg"];
-    [myPhotos addObject:@"http://www.cape-verde-holiday.com/kitesurf.jpg"];
-    [myPhotos addObject:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"];
-    [myPhotos addObject:@"http://www.luminous-landscape.com/images64/gallery4741-thumb.jpg"];    
-    [myPhotos addObject:@"http://www.secondspacegallery.com/images/Second-Space-Gallery_for-we.jpg"];
-    [myPhotos addObject:@"http://images.politico.com/global/portland.jpg"];
-    [myPhotos addObject:@"http://www.cape-verde-holiday.com/kitesurf.jpg"];
-    [myPhotos addObject:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"];
-    [myPhotos addObject:@"http://www.luminous-landscape.com/images64/gallery4741-thumb.jpg"];    
-    [myPhotos addObject:@"http://www.secondspacegallery.com/images/Second-Space-Gallery_for-we.jpg"];
-    [myPhotos addObject:@"http://images.politico.com/global/portland.jpg"];
-    [myPhotos addObject:@"http://www.cape-verde-holiday.com/kitesurf.jpg"];
-    [myPhotos addObject:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"];
-    [myPhotos addObject:@"http://www.luminous-landscape.com/images64/gallery4741-thumb.jpg"];    
-    [myPhotos addObject:@"http://www.secondspacegallery.com/images/Second-Space-Gallery_for-we.jpg"];
-    [myPhotos addObject:@"http://images.politico.com/global/portland.jpg"];
-    [myPhotos addObject:@"http://www.cape-verde-holiday.com/kitesurf.jpg"];
-    [myPhotos addObject:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"];
-    [myPhotos addObject:@"http://www.luminous-landscape.com/images64/gallery4741-thumb.jpg"];    
-    [myPhotos addObject:@"http://www.secondspacegallery.com/images/Second-Space-Gallery_for-we.jpg"];
-    [myPhotos addObject:@"http://images.politico.com/global/portland.jpg"];
-    [myPhotos addObject:@"http://www.cape-verde-holiday.com/kitesurf.jpg"];
-    [myPhotos addObject:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"];
-    [myPhotos addObject:@"http://www.luminous-landscape.com/images64/gallery4741-thumb.jpg"];    
-    [myPhotos addObject:@"http://www.secondspacegallery.com/images/Second-Space-Gallery_for-we.jpg"];
-    [myPhotos addObject:@"http://images.politico.com/global/portland.jpg"];
-    [myPhotos addObject:@"http://www.cape-verde-holiday.com/kitesurf.jpg"];
-    [myPhotos addObject:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"];
-    [myPhotos addObject:@"http://www.luminous-landscape.com/images64/gallery4741-thumb.jpg"];    
-    [myPhotos addObject:@"http://www.secondspacegallery.com/images/Second-Space-Gallery_for-we.jpg"];
-    [myPhotos addObject:@"http://images.politico.com/global/portland.jpg"];
-    [myPhotos addObject:@"http://www.cape-verde-holiday.com/kitesurf.jpg"];
-    [myPhotos addObject:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"];
-    [myPhotos addObject:@"http://www.luminous-landscape.com/images64/gallery4741-thumb.jpg"];    
-    [myPhotos addObject:@"http://www.secondspacegallery.com/images/Second-Space-Gallery_for-we.jpg"];
-    [myPhotos addObject:@"http://images.politico.com/global/portland.jpg"];
-    [myPhotos addObject:@"http://www.cape-verde-holiday.com/kitesurf.jpg"];
-    [myPhotos addObject:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"];
-    [myPhotos addObject:@"http://www.luminous-landscape.com/images64/gallery4741-thumb.jpg"];    
-    [myPhotos addObject:@"http://www.secondspacegallery.com/images/Second-Space-Gallery_for-we.jpg"];
-    [myPhotos addObject:@"http://images.politico.com/global/portland.jpg"];
-    [myPhotos addObject:@"http://www.cape-verde-holiday.com/kitesurf.jpg"];
-    [myPhotos addObject:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"];
-    [myPhotos addObject:@"http://www.luminous-landscape.com/images64/gallery4741-thumb.jpg"];    
-    [myPhotos addObject:@"http://www.secondspacegallery.com/images/Second-Space-Gallery_for-we.jpg"];
-    [myPhotos addObject:@"http://images.politico.com/global/portland.jpg"];
-    [myPhotos addObject:@"http://www.cape-verde-holiday.com/kitesurf.jpg"];
-    [myPhotos addObject:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"];
-    [myPhotos addObject:@"http://www.luminous-landscape.com/images64/gallery4741-thumb.jpg"];    
-    [myPhotos addObject:@"http://www.secondspacegallery.com/images/Second-Space-Gallery_for-we.jpg"];
-    [myPhotos addObject:@"http://images.politico.com/global/portland.jpg"];
-    [myPhotos addObject:@"http://www.cape-verde-holiday.com/kitesurf.jpg"];
-    [myPhotos addObject:@"http://www.reuk.co.uk/OtherImages/repower-5mw-wind-turbine.jpg"];
     
     NSMutableArray *myCaptions = [[NSMutableArray alloc] init];
     [myCaptions addObject:@"Gallery 1"];    
@@ -227,10 +33,14 @@
     [myCaptions addObject:@"Kiting"];
     [myCaptions addObject:@"Energy"];
     
-//    MTGalleryViewController *controller = [[MTGalleryViewController alloc] initWithPhotos:myPhotos andCaptions:nil];    
     MTGalleryViewController *controller = [[MTGalleryViewController alloc] initWithPhotos:myPhotos andCaptions:myCaptions];    
     
     [self presentModalViewController:controller animated:YES];	
+    
+    [myPhotos release];
+    [myCaptions release];
+    
+    [controller release];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -238,24 +48,6 @@
     [super viewWillAppear:animated];
     [[UIApplication sharedApplication] setStatusBarHidden:NO];
 }
-
-
-/*
- // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
-        // Custom initialization
-    }
-    return self;
-}
-*/
-
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
-    [super viewDidLoad];
-}
-*/
 
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {

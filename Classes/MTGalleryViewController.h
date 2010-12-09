@@ -34,7 +34,7 @@
 @property (nonatomic,retain) NSOperationQueue *queue;
 @property (nonatomic,retain) NSMutableArray *photoUrls;
 @property NSInteger currentPage;;
-@property (nonatomic,assign) NSArray *captions;
+@property (nonatomic,retain) NSArray *captions;
 @property (nonatomic,retain) IBOutlet UITextView *captionTextView;
 
 - (IBAction) closePhotos;
@@ -43,6 +43,7 @@
 - (void) queueImageRetrievalForPage:(NSInteger)page;
 - (void)loadImagesForCurrentPosition;
 - (MTGalleryViewController *)initWithPhotos:(NSArray *)photoURLStrings andCaptions:(NSArray *)captions;
+- (NSString *) pathForCachedUrl:(NSString *)urlString;
 
 @end
 

@@ -16,7 +16,7 @@
 {
     self = [super init];
 
-    captions = myCaptions;
+    captions = [myCaptions copy];
 
     photoUrls = [[NSMutableArray alloc] init];
     
@@ -40,41 +40,53 @@
     [self resizeScrollView];
 }
 
+- (NSString *) pathForCachedUrl:(NSString *)urlString
+{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+
+    return [NSString stringWithFormat:@"%@/%@", [paths objectAtIndex:0], [[urlString componentsSeparatedByString:@"/"] lastObject]];
+}
+
 - (void) loadImageViewWithUrl:(NSArray *)args 
 {
     UIImageView *imageView = [args objectAtIndex:0];
     NSURL *imageURL = [args objectAtIndex:1];
     
-    NSLog(@"Downloading %@", [imageURL absoluteString]);
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSData *data = nil;
     
-    //    if (!cached)
-    //    {
-    //        // download
-    //    }
-    //    else
-    //    {
-    //        cached
-    //    }
+    NSString *filePath = [self pathForCachedUrl:[imageURL absoluteString]];
     
-    NSData *data = [[NSData alloc] initWithContentsOfURL:imageURL];
-
-    // Stop spinner
-    if (data != nil)
+    if ([fileManager fileExistsAtPath:filePath])
     {
-        NSLog(@"Download complete for %@", [imageURL absoluteString]);
-
-        // Cache to FS
-        // ...
-        
-        // Update the imageView
+        NSLog(@"Using cached file!");
+        data = [NSData dataWithContentsOfFile:filePath];
         [imageView performSelectorOnMainThread:@selector(setImage:) withObject:[UIImage imageWithData:data] waitUntilDone:NO];
-        
-        [data release];
     }
     else
     {
-        NSLog(@"Download failed for %@", [imageURL absoluteString]);
-        [imageView performSelectorOnMainThread:@selector(setImage:) withObject:[UIImage imageNamed:@"MTGallery_image_not_found"] waitUntilDone:NO];
+        // Download        
+        NSLog(@"Downloading %@", [imageURL absoluteString]);
+        data = [[NSData alloc] initWithContentsOfURL:imageURL];
+        
+        // Stop spinner
+        if (data != nil)
+        {
+            NSLog(@"Download complete for %@", [imageURL absoluteString]);
+            
+            // Cache to FS            
+            [fileManager createFileAtPath:filePath contents:data attributes:nil];
+            
+            // Update the imageView
+            [imageView performSelectorOnMainThread:@selector(setImage:) withObject:[UIImage imageWithData:data] waitUntilDone:NO];
+            
+            [data release];
+        }
+        else
+        {
+            NSLog(@"Download failed for %@", [imageURL absoluteString]);
+            [imageView performSelectorOnMainThread:@selector(setImage:) withObject:[UIImage imageNamed:@"MTGallery_image_not_found"] waitUntilDone:NO];
+        }        
     }
     
     if (imageView.tag == currentPage)
@@ -97,7 +109,6 @@
 - (void)loadImagesForCurrentPosition
 {
     self.currentPage = ((self.scrollView.contentOffset.x - self.scrollView.frame.size.width / 2) / self.scrollView.frame.size.width) + 2; 
-    NSLog(@"current page: %d", self.currentPage);
     
     BOOL foundCurrent = NO;
     BOOL foundPrevious = NO;
@@ -163,9 +174,8 @@
     {
         self.captionTextView.hidden = YES;
     }
-    
-    
 
+    
     // Load Images    
     if (foundCurrent == NO)
     {
