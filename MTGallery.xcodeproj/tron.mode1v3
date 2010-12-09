@@ -274,9 +274,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>6</integer>
-									<integer>1</integer>
-									<integer>0</integer>
+									<integer>27</integer>
+									<integer>25</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
@@ -329,21 +328,22 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>8F45722412B08ACB00FDDD63</string>
+										<string>8F45722C12B0914500FDDD63</string>
 										<key>history</key>
 										<array>
 											<string>8FDD75AA1241975800D59618</string>
 											<string>8FDD75CC124198B100D59618</string>
 											<string>8FDD77001241A8AF00D59618</string>
-											<string>8F158C5E12442B6C00D672FD</string>
 											<string>8F4571CA12B07F1000FDDD63</string>
 											<string>8F4571CC12B07F1000FDDD63</string>
-											<string>8F4571FC12B0869A00FDDD63</string>
-											<string>8F4571FD12B0869A00FDDD63</string>
 											<string>8F4571FE12B0869A00FDDD63</string>
 											<string>8F4571FF12B0869A00FDDD63</string>
 											<string>8F45721012B0875800FDDD63</string>
-											<string>8F45721112B0875800FDDD63</string>
+											<string>8F45722712B0914500FDDD63</string>
+											<string>8F45722812B0914500FDDD63</string>
+											<string>8F45722912B0914500FDDD63</string>
+											<string>8F45722A12B0914500FDDD63</string>
+											<string>8F45722B12B0914500FDDD63</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -541,13 +541,11 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>8F45722312B08AC400FDDD63</string>
 		<string>8F4571D012B07F1000FDDD63</string>
 		<string>8F4571AD12B07CC900FDDD63</string>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>8FF1387B1236FEE500BC683B</string>
-		<string>1C78EAAD065D492600B07095</string>
+		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>/Users/tron/Desktop/MTGallery/MTGallery.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -858,7 +856,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C530D57069F1CE1000CFCEE</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
